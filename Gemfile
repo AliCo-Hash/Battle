@@ -9,6 +9,6 @@ gem 'rspec'
 gem 'sinatra'
 gem 'capybara'
 gem 'selenium-webdriver'
-gem "sinatra-contrib"
+gem 'sinatra-contrib'
 gem 'webrick'
 gem 'launchy'
