@@ -16,10 +16,16 @@ describe Player do
     end
   end
     
-  describe "#attack" do
+  describe '#attack' do
     it "allows a player to attack another player" do
-      expect(meghan.attack).to receive(:take_damage)
+      expect(ali).to receive(:take_damage)
+      meghan.attack(ali)
     end
   end
 
+  describe '#take_damage' do
+    it "reduces players hit_points" do
+      expect { ali.take_damage }.to change { ali.hit_points }.by(-10)
+    end
+  end
 end
